@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ProiectFinal</title>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
@@ -25,7 +26,7 @@
 
         <div class="header-limiter">
 
-          <h1><a href="../index.html">Proiect<span>final</span></a></h1>
+          <h1><a href="../index.html">Baby<span>Bear</span></a></h1>
 
           <nav>
             <a href="../index.html">Home</a>
@@ -45,17 +46,17 @@
         </h1>
       </div>
 
-      <div class="hidden col-lg-9 col-sm-9 col-xs-10 " id="unavailable">Ne cerem scuze, nu avem stoc suficient.</div>
+      <div class="hidden col-lg-12 col-sm-12 col-xs-12 " id="unavailable">Ne cerem scuze, nu avem stoc suficient.</div>
 
-      <div id="content" class="col-lg-9 col-sm-9 col-xs-10">
-        <table border="1" style="width:100%;" class=" col-lg-9 col-sm-9 col-xs-10 ">
-          <thead>
+      <div id="content" class="table-responsive table table-hover">
+        <table border="2" style="width:80%; margin-left:auto; margin-right:auto;" class="table ">
+          <thead class="thead-dark">
             <tr>
-              <th>Produse</th>
-              <th>Pret</th>
-              <th>Cantitate</th>
-              <th>Subtotal</th>
-              <th>Remove</th>
+              <th scope="col">Produse</th>
+              <th scope="col">Pret</th>
+              <th scope="col" >Cantitate</th>
+              <th scope="col">Subtotal</th>
+              <th scope="col">Remove</th>
             </tr>
           </thead>
           <tbody>
@@ -64,14 +65,13 @@
         </table>
         <div id="products" class="col-lg-9 col-sm-9 col-xs-10 ">
         </div>
-        <div id="orderCosts" class="col-lg-9 col-sm-9 col-xs-10">
+        <div id="orderCosts" class="col-lg-12 col-sm-12 col-xs-12">
           <div>
             <div>Total:</div><span id="totalProductsCost"> </span>
           </div>
           <button type="text" id="order-button" onclick="order()">Comanda</button>
         </div>
       </div>
-
 
 
 

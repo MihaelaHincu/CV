@@ -54,28 +54,36 @@ async function draw() {
     str += `
     <tr>
     <td class="name" style="text-align: center">
-    <a  id="${i}" href="../detalii/detalii.html?products=${i}" >
-    ${list[i].name}
+    <a  id="${i}" href="../detalii/detalii.html?products=${i}" > <p>
+    ${list[i].name} </p>
     </td>
 
     <td class="price" style="text-align: center" >
-    <div>${list[i].price}</div>
+    <p>${list[i].price}</p>
     </td>
     <td>
-    <span style="text-align:right; cursor:pointer;"  onclick="increase('${i}')">
-    +
-   </span>
+   
    <div class="quantity " >
-     <div id=" ${list[i].name}">  ${list[i].quantity}</div>
+ 
+     <p id="${list[i].name}"> 
+     <span style=" cursor:pointer; margin-right:10%;"  onclick="decrease('${i}')">
+    <b> < </b>
+    </span>
+     
+     ${list[i].quantity}
+     
+          
+   <span style=" cursor:pointer;  margin-left:10%;" onclick="increase('${i}')">
+   <b> > </b>
+  </span>
+  </p>
+
    </div>
 
-   <span style="text-align:left; cursor:pointer;" onclick="decrease('${i}')">
-    -
-   </span>
    </td>
 
    <td>
-   <div class="subtotal ${i}" > lei</div>
+   <p class="subtotal ${i}" > lei</p>
    </td>
 
    <td>
@@ -164,7 +172,7 @@ async function del(i) {
 async function NRProductsInCart() {
 
   await ajax("GET", "https://proiectfinal-c3768.firebaseio.com/cart.json")
-  
+
     .then(function (answer) {
       cart = answer;
       var sum = 0;
@@ -197,11 +205,11 @@ async function changeStock() {
       await ajax("PUT", `https://proiectfinal-c3768.firebaseio.com/products/${i}/stock.json`, JSON.stringify(stock), undefined)
 
 
-      }
-  
- 
     }
+
+
   }
+}
 
 async function order() {
   for (var i in list) {

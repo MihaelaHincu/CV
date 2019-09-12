@@ -1,7 +1,7 @@
 body {
-  font-family: Muli !important;
+  font-family: "Muli" !important;
   overflow-x: hidden;
-  background-color: #ADCBE3!important;
+  background-image: url(linedpaper.png);
   }
 
  
@@ -19,19 +19,45 @@ body {
 	text-shadow: 0px 0px 3px white;
 	
 }
-.it {
-	color:  #04396C;
-}
-.makeitrain {
-margin-left: -30px;
+
+
+#about {
+	text-align: center;
+	background-image: url(patch.png);
+	padding:55px;
+    margin-left: 20%;
+   background-position: center;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   
 
 }
 
-img {
+.babyicon {
+	text-align: center;
+
+	padding:55px;
+   background-position: center;
+   
+   background-repeat: no-repeat;
+background-image: url("https://img.icons8.com/cotton/150/000000/babys-room.png")
+}
+#about p {
+	font-size: 20px;
+	padding:10px;
+
+}
+#carouselimg {
+	background-image: linear-gradient(rgba(247, 247, 247, 0.144), rgba(255, 255, 255, 0.144));
+	height:870px;
+}
+
+#productsWrapper img, img.space {
     max-height: 150px;
     max-width: 150px;
     height: 100%;
-    margin: auto;
+	margin: auto;
+
 }
 
 .space {
@@ -78,7 +104,7 @@ hr {
 	margin: 0;
 }
 
-.header-fixed .header-limiter h1 span {
+ h1 span {
 	color: #5383d3;
 }
 
@@ -139,8 +165,35 @@ body.fixed .header-fixed .header-limiter nav {
 	font-size: 13px;
 }
 
+@media all and (max-width: 1500px) {
+	#carouselimg {
+		background-image: linear-gradient(rgba(247, 247, 247, 0.144), rgba(255, 255, 255, 0.144));
+		height:auto;
+	}
+	#about {
+		margin-left: auto;
+		margin-right:auto;
+text-align: center;
+background-image:none;
 
+	}
 
+	.babyicon {
+		
+		margin-right: 20%;
+	   background-position: center;
+	   background-size: 80%;
+	   background-repeat: no-repeat;
+	background-image: url("https://img.icons8.com/cotton/150/000000/babys-room.png");
+	}
+
+}
+@media all and (max-width: 1199px) {
+	.babyicon {
+		background-image: none;
+	}
+
+}
 
 @media all and (max-width: 600px) {
 
@@ -169,7 +222,15 @@ body.fixed .header-fixed .header-limiter nav {
 	body.fixed .header-fixed {
 		display: none;
 	}
-
+	.babyicon {
+		background-image: url("https://img.icons8.com/cotton/150/000000/babys-room.png");
+		margin-left:auto;
+		margin-right:auto;
+		background-position: center;
+		
+		background-size: 20%;
+		background-repeat: no-repeat;
+	}
 }
 
 /* ============= FOOTER =============== */
@@ -345,12 +406,15 @@ body.fixed .header-fixed .header-limiter nav {
 	margin-left: auto;
     margin-right: auto;
     width: 8em;
-	background: rgba(76, 168, 175, 0.3);
+	background-image:url(patch2.png);
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
 	padding: 30px 30px 0px 30px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-
+	border-radius: 30px;
   }
   
 .column {
@@ -369,6 +433,7 @@ body.fixed .header-fixed .header-limiter nav {
   height: 300px;
   margin: auto;
   margin-left: 30px;
+  margin-bottom: 30px;
   transition:  0.5s;
   
 }
@@ -379,14 +444,17 @@ transition: all 0.5s ease-out;
 }
 
 
-
+.footer-company {
+	font-size: 12px;
+	color: white;
+}
 
 /* BUTTON BUY */
 
 a,button{cursor: pointer;}
   .raise{
 	  background-color: rgb(211, 199, 203);
-	  color: #00847E;
+	  color: rgb(0, 0, 0);
   }  
   .raise:hover,
   .raise:focus {

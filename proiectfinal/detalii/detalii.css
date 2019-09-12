@@ -1,7 +1,7 @@
 body {
-  font-family: Muli !important;
+  font-family: "Muli" !important;
   overflow-x: hidden;
-  background-color: #ADCBE3!important;
+  background-image:url(../linedpaper.png);
   }
 
  
@@ -22,15 +22,11 @@ body {
 .it {
 	color: #04396C;
 }
-.makeitrain {
-margin-left: -30px;
 
-}
 
 img {
-    max-height: 150px;
-    max-width: 150px;
-    height: 100%;
+    max-height: 290px;
+    max-width: 290px;
     margin: auto;
 }
 
@@ -68,7 +64,7 @@ img {
 
 .header-fixed .header-limiter h1 {
 	float: left;
-	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	font: normal 28px "Cookie", Arial, Helvetica, sans-serif;
 	line-height: 40px;
 	margin: 0;
 }
@@ -344,40 +340,51 @@ width: 100%;
   
 /* ============== COLOANE ============== */
 
+.footer-company {
+	font-size: 12px;
+	color: white;
+}
 
 .wrapper {
 	margin-left: auto;
     margin-right: auto;
     width: 50%;
-	background: rgba(76, 168, 175, 0.3);
+	background-image:linear-gradient(rgba(255, 255, 255, 0.295), rgba(253, 253, 253, 0.123)),url(patch3.png);
+	background-position: left;
+	background-size: auto;
+	background-repeat: no-repeat;
 	padding: 30px 30px 0px 30px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-
+	font-size: 20px;
+	padding: 16px;
   }
   
 
 .column {
-  float: left;
+  float: right;
   padding: 0 10px;
   margin-bottom: 30px;
 }
 
 .card {
-  box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #F7EFED;
-  width: 300px;
-  height: 320px;
+  
+	padding: 16px;
+  text-align: left;
+  width: 400px;
+ 
   margin: auto;
-  margin-left: 30px;
-  transition:  0.5s;
+
   
 }
 
-
+.info {
+	float:left;
+text-align: left;
+	width: 45%;
+	padding: 16px;
+}
 
 
 
@@ -385,8 +392,8 @@ width: 100%;
 
 a,button{cursor: pointer;}
   .raise{
-	  background-color: #B5A6AB;
-	  color: #00847E;
+	  background-color: rgb(255, 255, 255);
+	 
   }  
   .raise:hover,
   .raise:focus {
