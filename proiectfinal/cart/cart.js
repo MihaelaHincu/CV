@@ -87,7 +87,7 @@ async function draw() {
    </td>
 
    <td>
-   <button onclick="del('${i}')" style="cursor:pointer;" class="removeBtn">Remove</button>
+   <button onclick="del('${i}')" style="cursor:pointer;" class="removeBtn"><img src="https://img.icons8.com/offices/16/000000/delete-sign.png"></button>
   </tr>
     `;
 

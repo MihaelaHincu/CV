@@ -152,6 +152,8 @@ body.fixed .header-fixed .header-limiter nav {
 	body.fixed .header-fixed {
 		display: none;
 	}
+
+	
 }
 
 /* ============= FOOTER =============== */
@@ -309,22 +311,26 @@ body.fixed .header-fixed .header-limiter nav {
 /* ============== COLOANE ============== */
 
 @media (max-width: 550px) {
-	table p {
+	table p,h1,div {
 
- font-size: 15px!important;
+ font-size: 10px!important;
 	}
-	table button {
+	table button, #order-button {
 		display: inline-block;
 	border-radius: 4px;
 	background-color: #5bac50;
 	border: none;
 	color: #FFFFFF;
-	font-size: 15px;
+	font-size: 10px;
 	text-align: center;
-	padding: 10px;
+	padding: 5px;
 	width: auto;
 	cursor: pointer;
 	margin: auto;
+	}
+	table {
+		
+ font-size: 10px!important;
 	}
 }
 

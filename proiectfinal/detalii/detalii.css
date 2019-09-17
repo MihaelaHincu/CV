@@ -1,51 +1,45 @@
 body {
-  font-family: "Muli" !important;
-  overflow-x: hidden;
-  background-image:url(../linedpaper.png);
-  }
-
- 
-         
-* {
-  margin: 0;
-  padding: 0;
+	font-family: "Muli" !important;
+	overflow-x: hidden;
+	background-image: url(../linedpaper.png);
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
 
 .title {
-	text-align:center;
+	text-align: center;
 	margin-top: 20px;
 	font-family: 'Courgette', cursive;
 	text-shadow: 0px 0px 3px white;
-	
 }
+
 .it {
 	color: #04396C;
 }
 
-
 img {
-    max-height: 290px;
-    max-width: 290px;
-    margin: auto;
+	max-height: 290px;
+	max-width: 290px;
+	margin: auto;
 }
 
 .space {
-  padding-bottom: 3%;
-  
+	padding-bottom: 3%;
 }
 
 /* ============= HEADER =============== */
+
 .header-fixed {
-	background-color:#292c2f;
-	box-shadow:0 1px 1px #ccc;
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px #ccc;
 	padding: 20px 40px;
 	height: 75px;
 	color: #ffffff;
 	box-sizing: border-box;
-	top:-100px;
-
-
+	top: -100px;
 }
 
 .header-fixed .header-limiter {
@@ -54,11 +48,10 @@ img {
 	margin: 0 auto;
 }
 
-.header-fixed-placeholder{
+.header-fixed-placeholder {
 	height: 80px;
 	display: none;
 }
-
 
 /* Logo */
 
@@ -81,20 +74,20 @@ img {
 }
 
 .header-fixed .header-limiter nav {
-	font:16px Arial, Helvetica, sans-serif;
+	font: 16px Arial, Helvetica, sans-serif;
 	line-height: 40px;
 	float: right;
 }
 
-.header-fixed .header-limiter nav a{
+.header-fixed .header-limiter nav a {
 	display: inline-block;
 	padding: 0 5px;
-	text-decoration:none;
+	text-decoration: none;
 	color: #ffffff;
 	opacity: 0.9;
 }
 
-.header-fixed .header-limiter nav a:hover{
+.header-fixed .header-limiter nav a:hover {
 	opacity: 1;
 }
 
@@ -130,16 +123,13 @@ body.fixed .header-fixed .header-limiter nav {
 	font-size: 13px;
 }
 
-
 /* Making the header responsive */
 
 @media all and (max-width: 600px) {
-
 	.header-fixed {
 		padding: 20px 0;
 		height: 75px;
 	}
-
 	.header-fixed .header-limiter h1 {
 		float: none;
 		margin: -8px 0 10px;
@@ -147,71 +137,63 @@ body.fixed .header-fixed .header-limiter nav {
 		font-size: 24px;
 		line-height: 1;
 	}
-
 	.header-fixed .header-limiter nav {
 		line-height: 1;
-		float:none;
+		float: none;
 	}
-
 	.header-fixed .header-limiter nav a {
 		font-size: 13px;
 	}
-
 	body.fixed .header-fixed {
 		display: none;
 	}
-
 }
 
 /* ============= FOOTER =============== */
-.footer-distributed{
+
+.footer-distributed {
 	background-color: #292c2f;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
-
 	padding: 55px 50px;
 	margin-top: 80px;
 }
 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
 	display: inline-block;
 	vertical-align: top;
 }
 
 /* Footer left */
 
-.footer-distributed .footer-left{
+.footer-distributed .footer-left {
 	width: 40%;
 }
 
 .footer-distributed .footer-left img {
-  width:100%;
+	width: 100%;
 }
-
-
 
 /* Footer links */
 
-.footer-distributed .footer-links{
-	color:  #ffffff;
+.footer-distributed .footer-links {
+	color: #ffffff;
 	margin: 20px 0 12px;
 	padding: 0;
 }
 
-.footer-distributed .footer-links a{
-	display:inline-block;
+.footer-distributed .footer-links a {
+	display: inline-block;
 	line-height: 1.8;
 	text-decoration: none;
-	color:  inherit;
+	color: inherit;
 }
 
-.footer-distributed .footer-company-name{
-	color:  #8f9296;
+.footer-distributed .footer-company-name {
+	color: #8f9296;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
@@ -219,12 +201,12 @@ body.fixed .header-fixed .header-limiter nav {
 
 /* Footer Center */
 
-.footer-distributed .footer-center{
+.footer-distributed .footer-center {
 	width: 35%;
 }
 
-.footer-distributed .footer-center i{
-	background-color:  #33383b;
+.footer-distributed .footer-center i {
+	background-color: #33383b;
 	color: #ffffff;
 	font-size: 25px;
 	width: 38px;
@@ -236,108 +218,99 @@ body.fixed .header-fixed .header-limiter nav {
 	vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope{
+.footer-distributed .footer-center i.fa-envelope {
 	font-size: 17px;
 	line-height: 38px;
 }
 
-.footer-distributed .footer-center p{
+.footer-distributed .footer-center p {
 	display: inline-block;
 	color: #ffffff;
 	vertical-align: middle;
-	margin:0;
+	margin: 0;
 }
 
-.footer-distributed .footer-center p span{
-	display:block;
+.footer-distributed .footer-center p span {
+	display: block;
 	font-weight: normal;
-	font-size:14px;
-	line-height:2;
+	font-size: 14px;
+	line-height: 2;
 }
 
-.footer-distributed .footer-center p a{
-	color:  #5383d3;
-	text-decoration: none;;
+.footer-distributed .footer-center p a {
+	color: #5383d3;
+	text-decoration: none;
+	;
 }
-
 
 /* Footer Right */
 
-.footer-distributed .footer-right{
+.footer-distributed .footer-right {
 	width: 20%;
 }
 
-.footer-distributed .footer-company-about{
+.footer-distributed .footer-company-about {
 	line-height: 20px;
-	color:  #92999f;
+	color: #92999f;
 	font-size: 13px;
 	font-weight: normal;
 	margin: 0;
 }
 
-.footer-distributed .footer-company-about span{
+.footer-distributed .footer-company-about span {
 	display: block;
-	color:  #ffffff;
+	color: #ffffff;
 	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: 20px;
 }
 
-.footer-distributed .footer-icons{
+.footer-distributed .footer-icons {
 	margin-top: 25px;
 }
 
-.footer-distributed .footer-icons a{
+.footer-distributed .footer-icons a {
 	display: inline-block;
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #33383b;
+	background-color: #33383b;
 	border-radius: 2px;
-
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
-
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
 
-
 @media (max-width: 880px) {
-
-	.footer-distributed{
+	.footer-distributed {
 		font: bold 14px sans-serif;
 	}
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
 		display: block;
 		width: 100%;
 		margin-bottom: 40px;
 		text-align: center;
 	}
-
-	.footer-distributed .footer-center i{
+	.footer-distributed .footer-center i {
 		margin-left: 0;
 	}
-
 }
 
 #showAdded {
 	background: rgb(189, 189, 189);
-
 	text-align: center;
-width: 100%;
+	width: 100%;
 	font-weight: bold;
 	position: sticky;
-  }
-  .hidden {
+}
+
+.hidden {
 	display: none;
-  }
-  
+}
+
 /* ============== COLOANE ============== */
 
 .footer-company {
@@ -347,84 +320,72 @@ width: 100%;
 
 .wrapper {
 	margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-	background-image:linear-gradient(rgba(255, 255, 255, 0.295), rgba(253, 253, 253, 0.123)),url(patch3.png);
+	margin-right: auto;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.295), rgba(253, 253, 253, 0.123)), url(patch3.png);
 	background-position: left;
 	background-size: auto;
 	background-repeat: no-repeat;
-	padding: 30px 30px 0px 30px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	font-size: 20px;
-	padding: 16px;
-  }
-  
+}
 
 .column {
-  float: right;
-  padding: 0 10px;
-  margin-bottom: 30px;
+	float: right;
+	padding: 0 10px;
+	margin-bottom: 30px;
 }
 
 .card {
-  
 	padding: 16px;
-  text-align: left;
-  width: 400px;
- 
-  margin: auto;
-
-  
+	text-align: left;
+	width: 400px;
+	margin: auto;
 }
 
 .info {
-	float:left;
-text-align: left;
+	float: left;
+	text-align: left;
 	width: 45%;
 	padding: 16px;
 }
 
-
-
 /* BUTTON BUY */
 
-a,button{cursor: pointer;}
-  .raise{
-	  background-color: rgb(255, 255, 255);
-	 
-  }  
-  .raise:hover,
-  .raise:focus {
+a, button {
+	cursor: pointer;
+}
+
+.raise {
+	background-color: rgb(255, 255, 255);
+}
+
+.raise:hover, .raise:focus {
 	box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
 	transform: translateY(-0.25em);
-  }
+}
 
-
-button {  
-  color: var(--color);
-  transition: 0.25s;
-  
+button {
+	color: var(--color);
+	transition: 0.25s;
 }
 
 button:hover {
-	color:#fff;
-	
+	color: #fff;
 }
-
 
 button {
-  background: none;
-  border: 2px solid;
-  font: inherit;
-  line-height: 1;
-  margin: 0.5em;
-  padding: 1em 2em;
+	background: none;
+	border: 2px solid;
+	font: inherit;
+	line-height: 1;
+	margin: 0.5em;
+	padding: 1em 2em;
 }
 
-
 /* LOADING */
+
 #loader {
 	position: absolute;
 	left: 50%;
@@ -440,38 +401,113 @@ button {
 	height: 120px;
 	-webkit-animation: spin 2s linear infinite;
 	animation: spin 2s linear infinite;
-  }
-  
-  @-webkit-keyframes spin {
-	0% { -webkit-transform: rotate(0deg); }
-	100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-	0% { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
-  }
-  
-  /* Add animation to "page content" */
-  .animate-bottom {
+}
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Add animation to "page content" */
+
+.animate-bottom {
 	position: relative;
 	-webkit-animation-name: animatebottom;
 	-webkit-animation-duration: 1s;
 	animation-name: animatebottom;
 	animation-duration: 1s
-  }
-  
-  @-webkit-keyframes animatebottom {
-	from { bottom:-100px; opacity:0 } 
-	to { bottom:0px; opacity:1 }
-  }
-  
-  @keyframes animatebottom { 
-	from{ bottom:-100px; opacity:0 } 
-	to{ bottom:0; opacity:1 }
-  }
-  
-  #myDiv {
+}
+
+@-webkit-keyframes animatebottom {
+	from {
+		bottom: -100px;
+		opacity: 0
+	}
+	to {
+		bottom: 0px;
+		opacity: 1
+	}
+}
+
+@keyframes animatebottom {
+	from {
+		bottom: -100px;
+		opacity: 0
+	}
+	to {
+		bottom: 0;
+		opacity: 1
+	}
+}
+
+#myDiv {
 	display: none;
 	text-align: center;
-  }
+}
+
+@media (max-width: 1200px) {
+	.info {
+		width: 50%;
+	}
+}
+
+@media (max-width: 900px) {
+	.info {
+		color: red;
+		width: 50%;
+		margin-right: -25%;
+	}
+	.card {
+		padding: 16px;
+		text-align: left;
+		width: 50%;
+		margin: auto;
+	}
+	.wrapper {
+	background: none;
+	}
+}
+
+
+	@media (max-width: 600px) {
+		.info {
+			color:green;
+			width:100%;
+			margin:auto;
+		}
+		.card {
+			padding: 16px;
+			text-align: center;
+			width:100%;
+			margin: auto;
+		}
+	}
+
+
+
+	/* @media (max-width: 599px) {
+		.info {
+			color:blue;
+			width: 50%;
+			margin-right: -25%;
+		}
+		.card {
+			padding: 16px;
+			text-align: left;
+			width: 50%;
+			margin: auto;
+		}
+	} */
