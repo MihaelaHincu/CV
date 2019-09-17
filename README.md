@@ -1,5 +1,5 @@
 # CV
-- SIIT final project: https://mihaelahincu.github.io/CV/proiectfinal/index.html (unfinished)
+- SIIT final project: https://mihaelahincu.github.io/CV/proiectfinal/index.html 
 
 →	baza de date: firebase.
 
